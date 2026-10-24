@@ -33,8 +33,6 @@ sets, reps, or a duration. Exercises are reusable across many workouts through a
     pipenv install --dev
     pipenv shell
     export FLASK_APP=server/app.py
-    flask db init
-    flask db migrate -m "initial schema"
     flask db upgrade
     python -m server.seed
 
